@@ -65,12 +65,16 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_bpm_detective__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_bpm_detective___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_bpm_detective__);
+
+
+var _bpmDetective = __webpack_require__(1);
+
+var _bpmDetective2 = _interopRequireDefault(_bpmDetective);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 //Importing convertVideo to convert youtube links to mp3
 //import Downloader from './downloader.js'
@@ -183,7 +187,7 @@ window.onload = function () {
               srcOffline.connect(offlineCtx.destination);
 
               try {
-                var bpm = __WEBPACK_IMPORTED_MODULE_0_bpm_detective___default()(buffer);
+                var bpm = (0, _bpmDetective2.default)(buffer);
                 console.log('BPM: ' + bpm);
                 document.querySelector("#the_bpm").value = bpm;
                 valueCalculated();
