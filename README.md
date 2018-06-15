@@ -21,4 +21,6 @@ To Run Locally:
 1. npm install
 2. npm start
 3. node server
- 
+4. Navigate to localhost:8080 in Chrome browser 
+
+**ONLY WORKS IN CHROME** 
