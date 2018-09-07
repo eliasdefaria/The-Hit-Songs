@@ -3,9 +3,9 @@ This program will prompt the user for a mp3 upload or youtube link, then run it 
 
 **Tech Stack**
 
-Node.js
-Express.js
-HTML/CSS/JS
+- Node.js
+- Express.js
+- HTML/CSS/JS
 
 The program analyzes four features of each uploaded song:
 
