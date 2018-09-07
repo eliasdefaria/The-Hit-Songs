@@ -1,6 +1,11 @@
 # THE_HIT_SONGS
 This program will prompt the user for a mp3 upload or youtube link, then run it through a version of the KNN (K-nearest neighbors) machine learning algorithm that will predict it to be a "hit" or "not a hit".
 
+**Tech Stack**
+Node.js
+Express.js
+HTML/CSS/JS
+
 The program analyzes four features of each uploaded song:
 
 1. Average Frequency
