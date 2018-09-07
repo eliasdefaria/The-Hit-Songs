@@ -9,12 +9,11 @@ The program analyzes four features of each uploaded song:
 4. Duration
 
 It analyzes these features on the client-side using the web-audio-api along with some other frontend libraries. 
-It then passes an array with these features to the backend via an XML HTTP POST Request. 
+It then passes a JSON array with these features to the backend via an XML HTTP POST Request. 
 
-The backend accepts the array and routes it the machineLearning.js file, which uses a trained  kNN (k-nearest neighbors) machine learning
- algorithm to classify the array as a 0 (not a hit) or 1 (a hit). 
+The backend accepts the array and routes it the machineLearning.js file, which uses a trained  kNN (k-nearest neighbors) machine learning algorithm to classify the array as a 0 (not a hit) or 1 (a hit). 
 
-After classification, the 0 or 1 is returned via HTTP, and the hit or not a hit page is rendered depending on the returned value. 
+After classification, the 0 or 1 is returned via HTTP, and the "hit" or "not a hit" page is rendered depending on the returned value. 
 
 To Run Locally:
 
@@ -29,8 +28,7 @@ I am a musician. I've played piano as a hobby since I was child, and recently I'
 I've made several songs over the past couple of months, but I wanted to accurately gauge if they were good pieces of music before releasing them.
 Thus came the idea for a machine learning algorithm that can determine hit songs!
 
-I plan to release the program in the future online as a web application accessible through the domain "thehitsongs.com". I've purchased the 
-domain and will hopefully get around to uploading it in the coming months. I'd like to improve it in these ways before I do so:
+I plan to release the program in the future online as a web application accessible through the domain "thehitsongs.com". I've purchased the domain and will hopefully get around to uploading it in the coming months. I'd like to improve it in these ways before I do so:
 
 1. Decrease latency of converting youtube links into mp3 files. The current method downloads the entire mp4, and converts
 that mp4 to an mp3 using ffmpeg. However, I have a feeling there is a way to only download the audio from the file online,
